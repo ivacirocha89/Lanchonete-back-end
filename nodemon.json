@@ -1,0 +1,9 @@
+{
+    "execMap": {
+        "js": "node -r sucrase/register",
+        "watch": ["src"], 
+        "exec": "node --experimental-modules server.js", 
+        "ext": "js,json"
+    }
+    
+}
