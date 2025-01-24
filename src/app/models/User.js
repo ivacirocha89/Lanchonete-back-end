@@ -16,6 +16,9 @@ class User extends Model {
       },
       {
         sequelize,
+        defaultScope: {
+          attributes: { exclude: ['password_hash', 'createdAt', 'updatedAt'] },
+        },
       },
     )
   }
